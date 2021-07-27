@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+require('dotenv/config');
+const api = process.env.API_URI
 
 app.get('/', (req, res) => {
     res.send('Hello World API !');
